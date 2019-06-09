@@ -8,7 +8,6 @@ class SqlFormatter(object):
 
     def __init__(self, input_path, output_path):
         self.input_path = input_path
-        
         self.output_path = output_path
 
     def format(self):
@@ -37,5 +36,5 @@ class SqlFormatter(object):
 
         return line
 
-formatter = SqlFormatter("test.txt", "output.txt")
+formatter = SqlFormatter("test.txt", "output.sql")
 formatter.format()
